@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: #3f3f40;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#canvas-container {
+  width: 520px;
+  background: #f8f9fa;
+  border: 5px solid white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#slot-stage {
+  width: 100%;
+  height: 260px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ui-panel {
+  background: #ffffff;
+  border-top: 2px solid #e5e5e5;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#ui-info {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+#ui-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#ui-controls button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #2d6cdf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#ui-controls button:hover {
+  background: #1f5ad1;
+}
+
+#ui-controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#bet-select {
+  margin-left: auto;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
